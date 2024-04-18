@@ -1,0 +1,53 @@
+.main-landscape {
+  margin: 20px;
+}
+
+.title-landscape {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.photo-container-landscape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image-container-landscape {
+  width: calc(50% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 600;
+  height: 400;
+}
+
+.image-container-landscape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop images uniformly */
+}
+
+.image-overlay-landscape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container-landscape:hover .image-overlay-landscape {
+  opacity: 1;
+}

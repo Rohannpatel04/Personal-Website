@@ -1,0 +1,49 @@
+/* NavBar.css */
+
+.nav-container { 
+    height: 80px; /* Fixed height for Navbar */
+    background-color: #000000; /* Example background color */
+    padding: 0 20px;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center content */
+}
+
+.logo-container {
+    padding: 0 20px; /* Add padding around logo */
+}
+
+.logo { 
+    height: 80px; /* Adjust logo height */
+}
+
+.pagelink-container { 
+    margin-left: auto; /* Push pagelinks to the right */
+    margin-right: 20px; /* Add right margin for spacing */
+}
+
+.link-name {
+    color: #ffffff; /* Example link color */
+    margin-right: 20px; /* Add right margin for spacing between links */
+    text-decoration: none; /* Remove default link underline */
+}
+
+.link-name:hover {
+    font-weight: bold; /* Make the link bold on hover */
+}
+
+.shopping-cart-container {
+    margin-left: auto; /* Push shopping cart icon to the right */
+    margin-right: 20px; /* Add right margin for spacing */
+    font-size: 25px; /* Adjust the font size to increase the icon size */
+}
+
+.cart-icon { 
+    color: white; 
+    text-decoration: none; /* Remove default link underline */
+}
+
+.cart-icon:hover { 
+    transform: scale(1.2); /* Increase size of icon on hover */
+}
+
+

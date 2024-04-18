@@ -1,0 +1,58 @@
+.main-car {
+    margin: 20px;
+  }
+  
+  .title-car {
+    font-size: 32px; /* Increase font size */
+    font-weight: bold;
+    margin: 20px auto; /* Adjust margin */
+    text-align: center; /* Center text */
+  }
+  
+  .photo-container-car {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .image-container-car {
+    width: calc(50% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 600;
+    height: 400;
+  }
+  
+  .image-container-car img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Crop the image to fill the container */
+  }
+  
+  .image-overlay-car {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .image-container-car:hover img {
+    opacity: 0.7; /* Dim the image on hover */
+  }
+  
+  .image-container-car:hover .image-overlay-car {
+    opacity: 1; /* Show text on hover */
+  }
+  
